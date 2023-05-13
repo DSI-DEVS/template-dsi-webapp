@@ -68,6 +68,38 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+.text-subtitle-2 {
+  /* font-family: Roboto; */
+  /* font-weight: 400; */
+  size: 50px !important;
+  /* letter-spacing: .1px; */
+}
+
+.card-border {
+  box-shadow: 0 0 2px #a1a1aa !important;
+}
+.card-border:hover {
+  box-shadow: 0 0 6px #a8a8a977 !important;
+}
+
+.text-overflow-ellipse {
+  text-overflow: ellipsis;
+}
+
+.rounded {border-radius: 10px !important; }
+
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
@@ -518,8 +550,19 @@ video {
   /* text-align: ; */
 }
 
-.text-title {color: #ffc300}
 
+.btn-connexion {
+  padding: 5px 8px 5px 8px;
+  border: 1.5px solid rgba(6, 50, 27, 0.844);
+  background: rgba(6, 50, 27, 0.059);
+  /* border: 1.5px solid #ffc300; */
+  border-radius: 5px;
+  transition: all .2s;
+}
+.btn-connexion:hover {
+  border: 1.5px solid rgb(4, 106, 53);
+  background: rgba(12, 147, 77, 0.059);
+}
 @media (min-width: 540px){
   .container{
     max-width: 540px;
@@ -740,6 +783,16 @@ video {
   margin-right: 16px;
 }
 
+.mx-5{
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.mx-6{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -747,6 +800,10 @@ video {
 
 .mt-2{
   margin-top: 8px;
+}
+
+.mt-3{
+  margin-top: 12px;
 }
 
 .mr-3{
@@ -884,8 +941,29 @@ video {
   padding-top: 72px;
 }
 
+.pt-90{
+  padding-top: 90 px !important;
+}
+.text-dark {
+  --bs-text-opacity: 1;
+  color: #3e3e3e !important;
+}
 .pt-120{
   padding-top: 120px;
+}
+.pt-100{
+  padding-top: 100px;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 20px;
+
+}
+
+.justify-content-center {
+  justify-content: center !important;
 }
 
 .pb-120{
@@ -893,7 +971,7 @@ video {
 }
 
 .pt-150{
-  padding-top: 150px;
+  padding-top: 150px !important;
 }
 
 .absolute{
@@ -1159,6 +1237,13 @@ a, button {
 .main-btn {
   --tw-bg-opacity: 1;
   background-color: #f4b70f;
+  transition: all .3s;
+}
+
+.main-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: #ffc422 !important;
+  box-shadow: 0 0 10px 1px #252525a0;
 }
 
 .main-btn:hover{
@@ -18202,11 +18287,27 @@ a, button {
 .blog_title a {
   display: block;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.2rem !important;
   line-height: 1.75rem;
   margin-top: 20px;
   --tw-text-opacity: 1;
   color: rgba(56, 66, 77, var(--tw-text-opacity));
+  width: 120px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.blog_title a {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-ellipsis {
+  display: block;
+  width: 350px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 .blog_title a:hover{

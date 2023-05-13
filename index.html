@@ -63,9 +63,9 @@
                 <div class="row items-center">
                     <div class="w-full">
                         <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
-                            <a class="navbar-brand mr-5 text-black text-l" href="index-2.html">
-                                <!-- <img src="assets/images/logo.svg" alt="Logo"> -->
-                                DSI
+                            <a class="navbar-brand mr-5 text-black d-flex align-items-center" href="index-2.html">
+                                <img src="assets/logo/dsi.logo.jpg" width="100" alt="Logo">
+                                <span class="ml-5 text-center font-bol">Direction des Systèmes <br> d'Information</span>
                             </a>
                             <button class="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
@@ -73,29 +73,15 @@
                                 <span class="toggler-icon"></span>
                             </button>
 
-                            <div class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none" id="navbarOne">
-                                <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
-                                    <li class="nav-item ml-5 lg:ml-11">
-                                        <a class="page-scroll active" href="#home">Accueil</a>
-                                    </li>
-                                    <li class="nav-item ml-5 lg:ml-11">
-                                        <a class="page-scroll" href="#blog">Actualités</a>
-                                    </li>
-                                    <li class="nav-item ml-5 lg:ml-11">
-                                        <a class="page-scroll" href="organisation_detail.html">Organisation</a>
-                                    </li>
-                                    <li class="nav-item ml-5 lg:ml-11">
-                                        <a class="page-scroll" href="#services">Services</a>
-                                    </li>
-                                    <li class="nav-item ml-5 lg:ml-11">
-                                        <a class="page-scroll" href="#work">Rapports</a>
-                                    </li>
-                                    <li class="nav-item ml-5 lg:ml-11">
-                                        <a class="page-scroll" href="#team">Equipe</a>
-                                    </li>
-                                    <!-- <li class="nav-item ml-5 lg:ml-11">
-                                        <a class="page-scroll" href="#contact">Contact</a>
-                                    </li> -->
+                            <div class="absolute left-0 z-20 hidden w-full px-5 py-3 bg-black duration-300 bg-white lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none" id="navbarOne">
+                                <ul id="nav" class="items-end content-start mr-auto lg:justify-end navbar-nav lg:flex">
+                                    <button class="btn-connexion d-flex align-items-center" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right mr-3" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                        </svg>
+                                        Connexion
+                                    </button>
                                 </ul>
                             </div> <!-- navbar collapse -->
                         </nav> <!-- navbar -->
@@ -135,58 +121,210 @@
 
         <!--====== BLOG PART START ======-->
 
-        <section id="blog" class="blog_area pt-120">
+        <section id="blog" class="blog_area pt-18">
             <div class="container">
-                <div class="row justify-center">
-                    <div class="w-full lg:w-1/2">
-                        <div class="section_title text-center pb-6">
-                            <h4 class="sub_title">Actualités | annonces</h4>
-                            <h4 class="main_title">Dernières publications</h4>
-                        </div> <!-- section title -->
-                    </div>
-                </div> <!-- row -->
-                <div class="row justify-center lg:justify-start">
-                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                        <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
-                            <div class="blog_image">
-                                <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
-                            </div>
-                            <div class="blog_content p-4 md:p-5">
-                                <ul class="blog_meta flex justify-between">
-                                    <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                    <li class="text-body-color text-sm md:text-base">15 June 2024</li>
-                                </ul>
-                                <h3 class="blog_title"><a href="#">How to track your business revenue</a></h3>
-                                <a href="#" class="more_btn">Read More</a>
-                            </div>
-                        </div> <!-- row -->
-                    </div>
-                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                        <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                <div class="section-title text-start ">
+                    <h2 class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-globe mx-4" viewBox="0 0 16 16">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                      </svg>
+                      Actualités
+                    </h2>
+                    <p class="mx-4">Dernières publications</p>
+                    <hr class="mx-4 mt-2">
+                </div>
+                <div class="row justify-center lg:justify-start mt-4 ">
+
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 rounded">
+                        <div class="single_blog mx-3 mt-3 rounded-xl card-border bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
                             <div class="blog_image">
                                 <img src="assets/images/blog-2.jpg" alt="blog" class="w-full">
                             </div>
                             <div class="blog_content p-4 md:p-5">
                                 <ul class="blog_meta flex justify-between">
-                                    <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                    <li class="text-body-color text-sm md:text-base">15 June 2024</li>
+                                    <a href="#" class="text-body-color hover:text-theme-color"><li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book mr-3" viewBox="0 0 16 16">
+                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                        </svg>
+                                        par: Vistin Beaugarel DIMI
+                                    </li></a>
+                                    <li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                        </svg>
+                                        15 June 2024
+                                    </li>
                                 </ul>
-                                <h3 class="blog_title"><a href="#">Improving products depending on feedback</a></h3>
+                                <h5 class="blog_title"><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link text-body-color" viewBox="0 0 16 16">
+                                        <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                        <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                    </svg>
+                                    Improving products depending on feedback
+                                </a></h5>
                                 <a href="#" class="more_btn">Read More</a>
                             </div>
                         </div> <!-- row -->
                     </div>
-                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                        <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 rounded">
+                        <div class="single_blog mx-3 mt-3 rounded-xl card-border bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
                             <div class="blog_image">
-                                <img src="assets/images/blog-3.jpg" alt="blog" class="w-full">
+                                <img src="assets/images/blog-2.jpg" alt="blog" class="w-full">
                             </div>
                             <div class="blog_content p-4 md:p-5">
                                 <ul class="blog_meta flex justify-between">
-                                    <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                    <li class="text-body-color text-sm md:text-base">15 June 2024</li>
+                                    <a href="#" class="text-body-color hover:text-theme-color"><li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book mr-3" viewBox="0 0 16 16">
+                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                        </svg>
+                                        par: Gédeon SEBA
+                                    </li></a>
+                                    <li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                        </svg>
+                                        15 June 2024
+                                    </li>
                                 </ul>
-                                <h3 class="blog_title"><a href="#">How to diversify your audience</a></h3>
+                                <h5 class="blog_title"><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link text-body-color" viewBox="0 0 16 16">
+                                        <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                        <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                    </svg>
+                                    Improving products depending on feedback
+                                </a></h5>
+                                <a href="#" class="more_btn">Read More</a>
+                            </div>
+                        </div> <!-- row -->
+                    </div>
+
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 rounded">
+                        <div class="single_blog mx-3 mt-3 rounded-xl card-border bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                            <div class="blog_image">
+                                <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                            </div>
+                            <div class="blog_content p-4 md:p-5">
+                                <ul class="blog_meta flex justify-between">
+                                    <a href="#" class="text-body-color hover:text-theme-color"><li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book mr-3" viewBox="0 0 16 16">
+                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                        </svg>
+                                        By: Musharof Chowdury
+                                    </li></a>
+                                    <li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                        </svg>
+                                        15 June 2024
+                                    </li>
+                                </ul>
+                                <h5 class="blog_title"><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link text-body-color" viewBox="0 0 16 16">
+                                        <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                        <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                    </svg>
+                                    How to track your business revenue
+                                </a></h5>
+                                <a href="#" class="more_btn">Read More</a>
+                            </div>
+                        </div> <!-- row -->
+                    </div>
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 rounded">
+                        <div class="single_blog mx-3 mt-3 rounded-xl card-border bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                            <div class="blog_image">
+                                <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                            </div>
+                            <div class="blog_content p-4 md:p-5">
+                                <ul class="blog_meta flex justify-between">
+                                    <a href="#" class="text-body-color hover:text-theme-color"><li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book mr-3" viewBox="0 0 16 16">
+                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                        </svg>
+                                        By: Musharof Chowdury
+                                    </li></a>
+                                    <li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                        </svg>
+                                        15 June 2024
+                                    </li>
+                                </ul>
+                                <h5 class="blog_title"><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link text-body-color" viewBox="0 0 16 16">
+                                        <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                        <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                    </svg>
+                                    How to track your business revenue
+                                </a></h5>
+                                <a href="#" class="more_btn">Read More</a>
+                            </div>
+                        </div> <!-- row -->
+                    </div>
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 rounded">
+                        <div class="single_blog mx-3 mt-3 rounded-xl card-border bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                            <div class="blog_image">
+                                <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                            </div>
+                            <div class="blog_content p-4 md:p-5">
+                                <ul class="blog_meta flex justify-between">
+                                    <a href="#" class="text-body-color hover:text-theme-color"><li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book mr-3" viewBox="0 0 16 16">
+                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                        </svg>
+                                        By: Musharof Chowdury
+                                    </li></a>
+                                    <li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                        </svg>
+                                        15 June 2024
+                                    </li>
+                                </ul>
+                                <h5 class="blog_title"><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link text-body-color" viewBox="0 0 16 16">
+                                        <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                        <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                    </svg>
+                                    How to track your business revenue
+                                </a></h5>
+                                <a href="#" class="more_btn">Read More</a>
+                            </div>
+                        </div> <!-- row -->
+                    </div>
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 rounded">
+                        <div class="single_blog mx-3 mt-3 rounded-xl card-border bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                            <div class="blog_image">
+                                <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                            </div>
+                            <div class="blog_content p-4 md:p-5">
+                                <ul class="blog_meta flex justify-between">
+                                    <a href="#" class="text-body-color hover:text-theme-color"><li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book mr-3" viewBox="0 0 16 16">
+                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                        </svg>
+                                        By: Musharof Chowdury
+                                    </li></a>
+                                    <li class="text-body-color text-sm md:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                        </svg>
+                                        15 June 2024
+                                    </li>
+                                </ul>
+                                <h5 class="blog_title"><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link text-body-color" viewBox="0 0 16 16">
+                                        <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                        <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                    </svg>
+                                    How to track your business revenue
+                                </a></h5>
                                 <a href="#" class="more_btn">Read More</a>
                             </div>
                         </div> <!-- row -->
@@ -201,16 +339,19 @@
 
     <section class="services_area pt-120" id="about">
         <div class="container">
+            <div class="section-title text-start ">
+                <h2 class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-diagram-3-fill mx-4" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                    </svg>
+                  Organisation
+                </h2>
+                <p class="mx-4">L'organisation de la DSI</p>
+                <h5 class="mx-6 mt-3">Nos différents services</h5>
+                <hr class="mx-4 mt-2">
+            </div>
             <div class="row justify-center">
-                <div class="w-full lg:w-1/2">
-                    <div class="section_title text-center pb-6">
-                        <h5 class="sub_title">Organisation</h5>
-                        <h4 class="main_title">Organisation de la DSI</h4>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-center">
-                <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                <a href="" class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
                     <div class="single_services text-center mt-8 mx-3">
                         <div class="services_icon">
                             <i class="lni lni-write"></i>
@@ -219,12 +360,14 @@
                             </svg>
                         </div>
                         <div class="services_content mt-5">
-                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Research</h3>
-                            <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Administration et Financier</h3>
+                            <p class="mt-4 text-ellipsis">
+                                Gérer les affaires administratives et les ressources humaine.
+                            </p>
                         </div>
                     </div> <!-- single services -->
-                </div>
-                <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                </a>
+                <a href="" class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
                     <div class="single_services text-center mt-8 mx-3">
                         <div class="services_icon">
                             <i class="lni lni-bulb"></i>
@@ -233,12 +376,15 @@
                             </svg>
                         </div>
                         <div class="services_content mt-5">
-                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Prototype</h3>
-                            <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Sécurité des systèmes d'information</h3>
+                            <p class="mt-4 text-ellipsis">
+                                Gérer les risques de sécurité des systèmes d'information
+                            </p>
                         </div>
                     </div> <!-- single services -->
-                </div>
-                <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                </a>
+
+                <a href="" class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
                     <div class="single_services text-center mt-8 mx-3">
                         <div class="services_icon">
                             <i class="lni lni-checkmark-circle"></i>
@@ -247,11 +393,47 @@
                             </svg>
                         </div>
                         <div class="services_content mt-5">
-                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Build</h3>
-                            <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Orgranisation et gestion des projets</h3>
+                            <p class="mt-4 text-ellipsis">
+                                Gérer la documentations, l'archivage lié aux projets
+                            </p>
                         </div>
                     </div> <!-- single services -->
-                </div>
+                </a>
+
+                <a href="" class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                    <div class="single_services text-center mt-8 mx-3">
+                        <div class="services_icon">
+                            <i class="lni lni-checkmark-circle"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                                <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                            </svg>
+                        </div>
+                        <div class="services_content mt-5">
+                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Opérations et maintenance des infrastructures</h3>
+                            <p class="mt-4 text-ellipsis">
+                                Gérer les liaisons télécoms
+                            </p>
+                        </div>
+                    </div> <!-- single services -->
+                </a>
+
+                <a href="" class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                    <div class="single_services text-center mt-8 mx-3">
+                        <div class="services_icon">
+                            <i class="lni lni-checkmark-circle"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                                <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                            </svg>
+                        </div>
+                        <div class="services_content mt-5">
+                            <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Systèmes, réseaux, bases de données et exploitation</h3>
+                            <p class="mt-4 text-ellipsis">
+                                Administrer les systèmes et les serveurs
+                            </p>
+                        </div>
+                    </div> <!-- single services -->
+                </a>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -259,11 +441,10 @@
     <!--====== SERVICES PART ENDS ======-->
 
     <!--====== ABOUT PART START ======-->
-
     <section id="why" class="about_area pt-120 relative">
         <div class="about_image flex items-end justify-end">
-            <div class="image lg:pr-13">
-                <img src="assets/images/about.svg" alt="about">
+            <div class="imag lg:pr-13">
+                <img src="assets/images/about.svg" height="40" alt="about">
             </div>
         </div> <!-- about image -->
         <div class="container">
@@ -274,33 +455,124 @@
                             <h5 class="sub_title">Attributions</h5>
                             <h4 class="main_title">Les atttributions de la DSI</h4>
                         </div> <!-- section title -->
-                        <p>Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergren, no sea takimata sanctus. </p>
-                        <ul class="about_list pt-3">
-                            <li class="flex mt-5">
-                                <div class="about_check">
-                                    <i class="lni lni-checkmark-circle"></i>
-                                </div>
-                                <div class="about_list_content pl-5 pr-2">
-                                    <p>Vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
-                                </div>
-                            </li>
-                            <li class="flex mt-5">
-                                <div class="about_check">
-                                    <i class="lni lni-checkmark-circle"></i>
-                                </div>
-                                <div class="about_list_content pl-5 pr-2">
-                                    <p>At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
-                                </div>
-                            </li>
-                            <li class="flex mt-5">
-                                <div class="about_check">
-                                    <i class="lni lni-checkmark-circle"></i>
-                                </div>
-                                <div class="about_list_content pl-5 pr-2">
-                                    <p>Dvero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="row justify-end pt-18">
+                            <!-- <div class="w-full lg:w-1/2"> -->
+                                <div class="about_content mx-4 pt-1">
+                                    <p class="paragraph text-dark">
+                                        Article 7: La direction des systèmes d'information est dirigée et animéé par un directeur.
+                                    </p>
+                                    <p class="mx-4 paragraph text-dark">
+                                        Elle est chargée, notamment, de :
+                                    </p>
+                                    <ul class="about_list pt-3">
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Elaborer le schéma directeur  définisant les orientations du ministère en matière d'informatique et en suivre l'exécution;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Planifier l'évolution et le développement dessystèmes d'information du ministère;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Former et informer les utilisateurs;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Gérer le site internet du ministère ainsi que la collecte des informations devant y être périodiquement publiées;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Administrer et gérer les systèmes informatiques de l'ensemble des structure du ministère;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Réaliser les études de développement et de la maintenance  des applications;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Concevoir, développer, gérer et maintenir l'ensemble des composants matériels et logiciels su système d'information et de la télécommunication du ministère</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Assurer la veille technologique en  rapport avec les nouvelles technologie de l'information et de la télécomunication;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Assurer l'accès à l'information et aux applications, et en garantir la sécurité, l"inégrité et la fiabilité;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Assister la maîtrise d'ouvrage pour les projets lié qux systèmes d'information;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Assurer la régulation technologique des services informatiques du ministère;</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex mt-5">
+                                            <div class="about_check">
+                                                <i class="lni lni-checkmark-circle"></i>
+                                            </div>
+                                            <div class="about_list_content pl-5 pr-2">
+                                                <p>Ceiller, en collaboration avec la direction des moyens généraux, à l'acquisition du matériel informatique;</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- about content -->
+                            <!-- </div> -->
+                        </div>
                     </div> <!-- about content -->
                 </div>
             </div> <!-- row -->
@@ -313,154 +585,200 @@
 
     <!--====== WORK PART START ======-->
 
-    <section id="work" class="work_area bg-gray pt-120 pb-120">
+    <section id="work" class="work_area bg-gray pt-100">
         <div class="container">
-            <div class="row justify-center">
-                <div class="w-ull lg:w-1/2">
-                    <div class="section_title text-center pb-6">
-                        <h5 class="sub_title">Rapports</h5>
-                        <h4 class="main_title">Nos 5 derniers rapports</h4>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <div class="container-fluid">
-            <div class="work_wrapper relative">
-                <div class="row work_active">
-                    <div class="w-full lg:w-3/12">
-                        <div class="single_item mx-auto">
-                            <div class="single_work mx-3">
-                                <div class="work_image">
-                                    <img src="assets/images/work-1.jpg" alt="work" class="w-full">
-                                </div>
-                                <div class="work_content">
-                                    <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                    <h4 class="work_title text-xl md:text-2xl"><a href="#">Marketing</a></h4>
-                                    <p class="mt-2">NoCodeAPI</p>
-                                </div>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="w-full lg:w-3/12">
-                        <div class="single_item mx-auto">
-                            <div class="single_work mx-3">
-                                <div class="work_image">
-                                    <img src="assets/images/work-2.jpg" alt="work" class="w-full">
-                                </div>
-                                <div class="work_content">
-                                    <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                    <h4 class="work_title text-xl md:text-2xl"><a href="#">Creative Design</a></h4>
-                                    <p class="mt-2">UIdeck</p>
-                                </div>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="w-full lg:w-3/12">
-                        <div class="single_item mx-auto">
-                            <div class="single_work mx-3">
-                                <div class="work_image">
-                                    <img src="assets/images/work-3.jpg" alt="work" class="w-full">
-                                </div>
-                                <div class="work_content">
-                                    <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                    <h4 class="work_title text-xl md:text-2xl"><a href="#">Web Design</a></h4>
-                                    <p class="mt-2">GrayGrids</p>
-                                </div>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="w-full lg:w-3/12">
-                        <div class="single_item mx-auto">
-                            <div class="single_work mx-3">
-                                <div class="work_image">
-                                    <img src="assets/images/work-4.jpg" alt="work" class="w-full">
-                                </div>
-                                <div class="work_content">
-                                    <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                    <h4 class="work_title text-xl md:text-2xl"><a href="#">Analysis</a></h4>
-                                    <p class="mt-2">Ayro UI</p>
-                                </div>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="w-full lg:w-3/12">
-                        <div class="single_item mx-auto">
-                            <div class="single_work mx-3">
-                                <div class="work_image">
-                                    <img src="assets/images/work-5.jpg" alt="work" class="w-full">
-                                </div>
-                                <div class="work_content">
-                                    <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                    <h4 class="work_title text-xl md:text-2xl"><a href="#">SMM</a></h4>
-                                    <p class="mt-2">LineIcons</p>
-                                </div>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="w-full lg:w-3/12">
-                        <div class="single_item mx-auto">
-                            <div class="single_work mx-3">
-                                <div class="work_image">
-                                    <img src="assets/images/work-2.jpg" alt="work" class="w-full">
-                                </div>
-                                <div class="work_content">
-                                    <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                    <h4 class="work_title text-xl md:text-2xl"><a href="#">SEO</a></h4>
-                                    <p class="mt-2">PageBulb</p>
-                                </div>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="w-full lg:w-3/12">
-                        <div class="single_item mx-auto">
-                            <div class="single_work mx-3">
-                                <div class="work_image">
-                                    <img src="assets/images/work-4.jpg" alt="work" class="w-full">
-                                </div>
-                                <div class="work_content">
-                                    <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                    <h4 class="work_title text-xl md:text-2xl"><a href="#">Mobile App</a></h4>
-                                    <p class="mt-2">Rocket Internet LTD</p>
-                                </div>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                </div> <!-- row -->
+            <div class="section-title text-start ">
+                <h2 class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark mx-4" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
+                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                    </svg>
+                  Rapports
+                </h2>
+                <p class="mx-4">Les derniers rapports de la DSI</p>
+                <hr class="mx-4 mt-2">
             </div>
+            <div class="container-fluid">
+                <div class="work_wrapper relative">
+                    <div class="row work_active">
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="assets/images/work-1.jpg" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Marketing</a></h4>
+                                        <p class="mt-2">NoCodeAPI</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="assets/images/work-2.jpg" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Creative Design</a></h4>
+                                        <p class="mt-2">UIdeck</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="assets/images/work-3.jpg" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Web Design</a></h4>
+                                        <p class="mt-2">GrayGrids</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="assets/images/work-4.jpg" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Analysis</a></h4>
+                                        <p class="mt-2">Ayro UI</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="assets/images/work-5.jpg" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">SMM</a></h4>
+                                        <p class="mt-2">LineIcons</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="assets/images/work-2.jpg" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">SEO</a></h4>
+                                        <p class="mt-2">PageBulb</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="assets/images/work-4.jpg" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Mobile App</a></h4>
+                                        <p class="mt-2">Rocket Internet LTD</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- container -->
         </div> <!-- container -->
     </section>
+
+    
+
 
     <!--====== WORK PART ENDS ======-->
 
 
     <!--====== TEAM PART START ======-->
 
-    <section id="team" class="team_area bg-gray pt-120 pb-120">
+    <section id="team" class="team_area bg-gray  pt-120 pb-120">
         <div class="container">
-            <div class="row justify-center">
-                <div class="w-full lg:w-1/2">
-                    <div class="section_title text-center pb-6">
-                        <h5 class="sub_title">Equipe</h5>
-                        <h4 class="main_title">Ceux qui animent les services</h4>
-                    </div> <!-- section title -->
-                </div>
+            <div class="section-title text-start ">
+                <h2 class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-globe mx-4" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                  </svg>
+                  Equipe
+                </h2>
+                <p class="mx-4">Ceux qui anilent les service</p>
+                <hr class="mx-4 mt-2">
             </div> <!-- row -->
             <div class="team-wrapper relative">
                 <div class="row team_active">
+                    <!-- Edira -->
                     <div class="w-full lg:w-4/12">
                         <div class="single_team_item mx-auto">
                             <div class="single_team mx-3">
-                                <div class="team_image relative">
-                                    <img src="assets/images/team-1.jpg" alt="team" class="w-full">
-                                    <ul class="social absolute top-4 right-8">
-                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                    </ul>
+                                <div class="team_image relative d-flex justify-content-center p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle text-dark" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                    </svg>
                                 </div>
                                 <div class="team_content py-5 px-8 relative">
-                                    <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Chris Dave</a></h4>
-                                    <p class="mt-2 transition-all duration-300 group-hover:text-white">Founder and CEO</p>
+                                    <h5 class="team_name text-xl md:text-2xl text-centr"><a href="#" class="text-black group-hover:text-white">EDIRA-EDIRENT </a></h5>
+                                    <h6 class="text-cente text-black group-hover:text-white">Cory</h6>
+                                    <p class="mt-2 transition-all duration-300 group-hover:text-white ">Chef de cervice d'administration et finance</p>
+                                </div>
+                            </div> <!-- single team -->
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="w-full lg:w-4/12">
+                        <div class="single_team_item mx-auto">
+                            <div class="single_team mx-3">
+                                <div class="team_image relative d-flex justify-content-center p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle text-dark" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                    </svg>
+                                </div>l> -->
+                                </div>
+                                <div class="team_content py-5 px-8 relative">
+                                    <h5 class="team_name text-xl md:text-2xl text-centr"><a href="#" class="text-black group-hover:text-white">EBATHA-FRANCK</a></h5>
+                                    <h6 class="text-cente text-black group-hover:text-white">Prince</h6>
+                                    <p class="mt-2 transition-all duration-300 group-hover:text-white text-ellipsis">Chef de service opération et maintenance et finance des infrastructure</p>
+                                </div>
+                            </div> <!-- single team -->
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="w-full lg:w-4/12">
+                        <div class="single_team_item mx-auto">
+                            <div class="single_team mx-3">
+                                <div class="team_image relative d-flex justify-content-center p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle text-dark" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                    </svg>
+                                </div>
+                                <div class="team_content py-5 px-8 relative">
+                                    <h5 class="team_name text-xl md:text-2xl text-centr"><a href="#" class="text-black group-hover:text-white">OSSOA </a></h5>
+                                    <h6 class="text-cente text-black group-hover:text-white">Godefroy</h6>
+                                    <p class="mt-2 transition-all duration-300 group-hover:text-white text-ellipsis">Chef de service organisation et gestion des projets</p>
                                 </div>
                             </div> <!-- single team -->
                         </div>
@@ -468,53 +786,16 @@
                     <div class="w-full lg:w-4/12">
                         <div class="single_team_item mx-auto">
                             <div class="single_team mx-3">
-                                <div class="team_image relative">
-                                    <img src="assets/images/team-3.jpg" alt="team" class="w-full">
-                                    <ul class="social absolute top-4 right-8">
-                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                    </ul>
+                                <div class="team_image relative d-flex justify-content-center p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle text-dark" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                    </svg>
                                 </div>
                                 <div class="team_content py-5 px-8 relative">
-                                    <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Sarah Doe</a></h4>
-                                    <p class="mt-2 transition-all duration-300 group-hover:text-white">UI Designer</p>
-                                </div>
-                            </div> <!-- single team -->
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-4/12">
-                        <div class="single_team_item mx-auto">
-                            <div class="single_team mx-3">
-                                <div class="team_image relative">
-                                    <img src="assets/images/team-5.jpg" alt="team" class="w-full">
-                                    <ul class="social absolute top-4 right-8">
-                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team_content py-5 px-8 relative">
-                                    <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Rob Hope</a></h4>
-                                    <p class="mt-2 transition-all duration-300 group-hover:text-white">Dr. Software Engineer</p>
-                                </div>
-                            </div> <!-- single team -->
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-4/12">
-                        <div class="single_team_item mx-auto">
-                            <div class="single_team mx-3">
-                                <div class="team_image relative">
-                                    <img src="assets/images/team-2.jpg" alt="team" class="w-full">
-                                    <ul class="social absolute top-4 right-8">
-                                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team_content py-5 px-8 relative">
-                                    <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Micheal Jordan</a></h4>
-                                    <p class="mt-2 transition-all duration-300 group-hover:text-white">Business Development Manager</p>
+                                    <h6 class="team_name text-xl md:text-2xl text-centr"><a href="#" class="text-black group-hover:text-white">DZAIT </a></h6>
+                                    <h6 class="text-cente text-black group-hover:text-white">Mel</h6>
+                                    <p class="mt-2 transition-all duration-300 group-hover:text-white text-ellipsis">Chef de service systèmes, réseaux, bases de données et exploitation</p>
                                 </div>
                             </div> <!-- single team -->
                         </div>
