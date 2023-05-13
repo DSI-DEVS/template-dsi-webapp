@@ -55,16 +55,7 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-  font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
+  font-family: "Open Sans", sans-serif !important;
 }
 
 /*
@@ -520,6 +511,15 @@ video {
   margin-left: auto;
 }
 
+.bg-green{
+  background-color: rgba(6, 50, 27, 0.541);
+  height: 80vh;
+  color: #fff;
+  /* text-align: ; */
+}
+
+.text-title {color: #ffc300}
+
 @media (min-width: 540px){
   .container{
     max-width: 540px;
@@ -532,6 +532,11 @@ video {
   }
 }
 
+@media (min-width: 954px){
+  .container{
+    max-width: 960px;
+  }
+}
 @media (min-width: 960px){
   .container{
     max-width: 960px;
@@ -548,6 +553,20 @@ video {
   .container{
     max-width: 1320px;
   }
+  .header_hero {
+    padding-top: 85px;
+  }
+}
+#home {
+  height:  80vh;
+  background: url('../images/bg.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-justify2{
+  text-align: justify;
 }
 
 .bg-black{
@@ -961,7 +980,7 @@ video {
 
 .text-theme-color{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .text-body-color{
@@ -971,7 +990,7 @@ video {
 
 .hover\:text-theme-color:hover{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .w-1\/2{
@@ -1139,11 +1158,11 @@ a, button {
 
 .main-btn {
   --tw-bg-opacity: 1;
-  background-color: rgba(56, 66, 77, var(--tw-bg-opacity));
+  background-color: #f4b70f;
 }
 
 .main-btn:hover{
-  --tw-bg-opacity: 0.8;
+  /* --tw-bg-opacity: 0.8; */
 }
 
 .main-btn{
@@ -1186,17 +1205,17 @@ a, button {
 .border-btn {
   background-color: transparent;
   --tw-border-opacity: 1;
-  border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   border-style: solid;
   border-width: 2px;
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .border-btn:hover {
   position: relative;
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .btn-hover::after {
@@ -1234,7 +1253,7 @@ a, button {
 
 .scroll-top {
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
   border-radius: 0.375rem;
   display: flex;
   align-items: center;
@@ -1265,7 +1284,7 @@ a, button {
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 @media (min-width: 720px){
@@ -1362,8 +1381,7 @@ a, button {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 10px;
   position: relative;
   --tw-text-opacity: 1;
   color: rgba(116, 126, 136, var(--tw-text-opacity));
@@ -1371,7 +1389,9 @@ a, button {
 
 .navbar-nav .nav-item a:hover{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: white;
+  background-color: #02A652;
+  border-radius: 4px;
 }
 
 .navbar-nav .nav-item a{
@@ -1387,14 +1407,12 @@ a, button {
 
 .navbar-nav .nav-item a.active {
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: #02A652;
+  background-color: inherit !important;
 }
 
 /* =========== hero =========== */
 
-.header_hero {
-  height: 900px;
-}
 
 @media (max-width: 1400px) {
   .header_hero {
@@ -1408,66 +1426,6 @@ a, button {
   z-index: -10;
 }
 
-.shape_1 {
-  top: 150px;
-  left: 10%;
-}
-
-.shape_2{
-  top: 150px;
-  left: 30%;
-}
-
-.shape_3{
-  top: 200px;
-  left: 40%;
-}
-
-.shape_4{
-  top: 120px;
-  left: 50%;
-}
-
-.shape_5{
-  top: 40%;
-  left: 14%;
-}
-
-.shape_6{
-  top: 34%;
-  left: 48%;
-}
-
-.shape_7{
-  top: 60%;
-  left: 80px;
-}
-
-.shape_8{
-  top: 55%;
-  left: 38%;
-}
-
-.shape_9{
-  bottom: 100px;
-  left: 13%;
-}
-
-.shape_10{
-  bottom: 200px;
-  left: 25%;
-}
-
-.shape_11{
-  bottom: 80px;
-  left: 35%;
-}
-
-.shape_12{
-  bottom: 25%;
-  left: 42%;
-}
-
 .header_shape {
   height: 100%;
   position: absolute;
@@ -1479,7 +1437,7 @@ a, button {
 .header_shape::before {
   content: '';
   background-color: #F5F5FC;
-  transform: skewX(-15deg);
+  /* transform: skewX(-15deg); */
   width: 200%;
   height: 100%;
   position: absolute;
@@ -1535,7 +1493,7 @@ a, button {
 
 .single_services:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
 }
 
 .single_services{
@@ -1623,7 +1581,7 @@ a, button {
 .single_services:hover .services_shape {
   fill: currentColor;
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 /* ========== about ========== */
@@ -1664,7 +1622,7 @@ a, button {
 
 .about_check i {
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -1707,7 +1665,7 @@ a, button {
 
 .work_content .arrow:hover{
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
 }
 
 .work_content .arrow{
@@ -1747,7 +1705,7 @@ a, button {
 
 .work_title a:hover{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 /* ======== team ======= */
@@ -1765,7 +1723,7 @@ a, button {
 
 .tns-nav button {
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
   --tw-bg-opacity: 0.3;
 }
 
@@ -2125,7 +2083,7 @@ a, button {
 
 .single_team:hover .group-hover\:bg-theme-color{
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
 }
 
 .single_team:hover .group-hover\:bg-border-color{
@@ -2150,7 +2108,7 @@ a, button {
 
 .single_team:hover{
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
 }
 
 .single_team:hover .group-hover\:bg-opacity-0{
@@ -2543,7 +2501,7 @@ a, button {
 
 .single_team:hover .group-hover\:border-theme-color{
   --tw-border-opacity: 1;
-  border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
 }
 
 .single_team:hover .group-hover\:border-border-color{
@@ -3068,7 +3026,7 @@ a, button {
 
 .single_team:hover .group-hover\:text-theme-color{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .single_team:hover .group-hover\:text-border-color{
@@ -3501,7 +3459,7 @@ a, button {
 
   .single_team:hover .sm\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_team:hover .sm\:group-hover\:bg-border-color{
@@ -3914,7 +3872,7 @@ a, button {
 
   .single_team:hover .sm\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_team:hover .sm\:group-hover\:border-border-color{
@@ -4427,7 +4385,7 @@ a, button {
 
   .single_team:hover .sm\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_team:hover .sm\:group-hover\:text-border-color{
@@ -4854,7 +4812,7 @@ a, button {
 
   .single_team:hover .md\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_team:hover .md\:group-hover\:bg-border-color{
@@ -5267,7 +5225,7 @@ a, button {
 
   .single_team:hover .md\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_team:hover .md\:group-hover\:border-border-color{
@@ -5780,7 +5738,7 @@ a, button {
 
   .single_team:hover .md\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_team:hover .md\:group-hover\:text-border-color{
@@ -6207,7 +6165,7 @@ a, button {
 
   .single_team:hover .lg\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_team:hover .lg\:group-hover\:bg-border-color{
@@ -6620,7 +6578,7 @@ a, button {
 
   .single_team:hover .lg\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_team:hover .lg\:group-hover\:border-border-color{
@@ -7133,7 +7091,7 @@ a, button {
 
   .single_team:hover .lg\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_team:hover .lg\:group-hover\:text-border-color{
@@ -7560,7 +7518,7 @@ a, button {
 
   .single_team:hover .xl\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_team:hover .xl\:group-hover\:bg-border-color{
@@ -7973,7 +7931,7 @@ a, button {
 
   .single_team:hover .xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_team:hover .xl\:group-hover\:border-border-color{
@@ -8486,7 +8444,7 @@ a, button {
 
   .single_team:hover .xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_team:hover .xl\:group-hover\:text-border-color{
@@ -8913,7 +8871,7 @@ a, button {
 
   .single_team:hover .\32xl\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_team:hover .\32xl\:group-hover\:bg-border-color{
@@ -9326,7 +9284,7 @@ a, button {
 
   .single_team:hover .\32xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_team:hover .\32xl\:group-hover\:border-border-color{
@@ -9839,7 +9797,7 @@ a, button {
 
   .single_team:hover .\32xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_team:hover .\32xl\:group-hover\:text-border-color{
@@ -9956,7 +9914,7 @@ a, button {
 
 .team_image .social li a:hover{
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
 }
 
 .team_image .social li a{
@@ -9966,7 +9924,7 @@ a, button {
 
 .team_image .social li a:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
 }
 
 .team_image .social li a{
@@ -10012,7 +9970,7 @@ a, button {
 
 .pricing_menu .active {
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
@@ -10355,7 +10313,7 @@ a, button {
 
 .single_pricing:hover .group-hover\:bg-theme-color{
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
 }
 
 .single_pricing:hover .group-hover\:bg-border-color{
@@ -10773,7 +10731,7 @@ a, button {
 
 .single_pricing:hover .group-hover\:border-theme-color{
   --tw-border-opacity: 1;
-  border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
 }
 
 .single_pricing:hover .group-hover\:border-border-color{
@@ -10798,7 +10756,7 @@ a, button {
 
 .single_pricing:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
 }
 
 .single_pricing:hover .group-hover\:border-opacity-0{
@@ -11306,7 +11264,7 @@ a, button {
 
 .single_pricing:hover .group-hover\:text-theme-color{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .single_pricing:hover .group-hover\:text-border-color{
@@ -11739,7 +11697,7 @@ a, button {
 
   .single_pricing:hover .sm\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_pricing:hover .sm\:group-hover\:bg-border-color{
@@ -12152,7 +12110,7 @@ a, button {
 
   .single_pricing:hover .sm\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_pricing:hover .sm\:group-hover\:border-border-color{
@@ -12665,7 +12623,7 @@ a, button {
 
   .single_pricing:hover .sm\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_pricing:hover .sm\:group-hover\:text-border-color{
@@ -13092,7 +13050,7 @@ a, button {
 
   .single_pricing:hover .md\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_pricing:hover .md\:group-hover\:bg-border-color{
@@ -13505,7 +13463,7 @@ a, button {
 
   .single_pricing:hover .md\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_pricing:hover .md\:group-hover\:border-border-color{
@@ -14022,7 +13980,7 @@ a, button {
 
   .single_pricing:hover .md\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_pricing:hover .md\:group-hover\:text-border-color{
@@ -14449,7 +14407,7 @@ a, button {
 
   .single_pricing:hover .lg\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_pricing:hover .lg\:group-hover\:bg-border-color{
@@ -14862,7 +14820,7 @@ a, button {
 
   .single_pricing:hover .lg\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_pricing:hover .lg\:group-hover\:border-border-color{
@@ -15375,7 +15333,7 @@ a, button {
 
   .single_pricing:hover .lg\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_pricing:hover .lg\:group-hover\:text-border-color{
@@ -15802,7 +15760,7 @@ a, button {
 
   .single_pricing:hover .xl\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_pricing:hover .xl\:group-hover\:bg-border-color{
@@ -16215,7 +16173,7 @@ a, button {
 
   .single_pricing:hover .xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_pricing:hover .xl\:group-hover\:border-border-color{
@@ -16728,7 +16686,7 @@ a, button {
 
   .single_pricing:hover .xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_pricing:hover .xl\:group-hover\:text-border-color{
@@ -17155,7 +17113,7 @@ a, button {
 
   .single_pricing:hover .\32xl\:group-hover\:bg-theme-color{
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+    background-color: #02A652;
   }
 
   .single_pricing:hover .\32xl\:group-hover\:bg-border-color{
@@ -17568,7 +17526,7 @@ a, button {
 
   .single_pricing:hover .\32xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   }
 
   .single_pricing:hover .\32xl\:group-hover\:border-border-color{
@@ -18081,7 +18039,7 @@ a, button {
 
   .single_pricing:hover .\32xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(249, 79, 79, var(--tw-text-opacity));
+    color: rgba(1, 105, 52, var(--tw-text-opacity));
   }
 
   .single_pricing:hover .\32xl\:group-hover\:text-border-color{
@@ -18179,7 +18137,7 @@ a, button {
 
 .single_pricing.active {
   --tw-border-opacity: 1;
-  border-color: rgba(249, 79, 79, var(--tw-border-opacity));
+  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -18217,7 +18175,7 @@ a, button {
 .single_pricing.active .services_shape, .single_pricing:hover .services_shape{
   fill: currentColor;
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .pricing_btn {
@@ -18234,7 +18192,7 @@ a, button {
 
 .single_pricing:hover .pricing_btn, .single_pricing.active .pricing_btn{
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
@@ -18253,7 +18211,7 @@ a, button {
 
 .blog_title a:hover{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 @media (min-width: 540px){
@@ -18273,7 +18231,7 @@ a, button {
 
 .more_btn:hover{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 /* ========== contact ========= */
@@ -18318,7 +18276,7 @@ a, button {
 
 .contact-btn {
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
 }
 
 .contact-btn:hover{
@@ -18339,7 +18297,7 @@ a, button {
 
 .subscribe-btn {
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
+  background-color: #02A652;
 }
 
 .subscribe-btn:hover{
@@ -18384,7 +18342,7 @@ a, button {
 
 .footer_social li a:hover{
   --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
+  color: rgba(1, 105, 52, var(--tw-text-opacity));
 }
 
 .footer_social li a{
