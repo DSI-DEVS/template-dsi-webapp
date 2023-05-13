@@ -1,61 +1,217 @@
-    <!--====== CONTACT PART START ======-->
+<!doctype html>
+<html class="no-js" lang="en">
 
-    <section id="contact" class="contact_area relative pt-18 pb-120">
-        <div class="contact_image flex items-center justify-end">
-            <div class="image lg:pr-13">
-                <img src="assets/images/contact.svg" alt="about">
-            </div>
-        </div> <!-- about image -->
-        
-        <div class="container">
-            <div class="row justify-end">
-                <div class="w-full lg:w-1/2">
-                    <div class="contact_wrapper mt-11">
-                        <div class="section_title pb-4">
-                            <h5 class="sub_title">Contact</h5>
-                            <h4 class="main_title">Get In Touch</h4>
-                            <p>Lorem ipsum dolor sitrg amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                        </div> <!-- section title -->
-                        
-                        <div class="contact_form">
-                            <form id="contact-form" action="https://preview.tailwindtemplates.co/plain/assets/php/contact.php" method="POST">
-                                <div class="row">
-                                    <div class="w-full md:w-1/2">
-                                        <div class="mx-3">
-                                            <div class="single_form mt-8">
-                                                <input name="name" id="name" type="text" placeholder="Name" class="w-full rounded-md py-4 px-6 border border-solid border-body-color">
-                                            </div> <!-- single form -->
-                                        </div>
-                                    </div>
-                                    <div class="w-full md:w-1/2">
-                                        <div class="mx-3">
-                                            <div class="single_form mt-8">
-                                                <input name="email" id="email" type="email" placeholder="Email" class="w-full rounded-md py-4 px-6 border border-solid border-body-color">
-                                            </div> <!-- single form -->
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="mx-3">
-                                            <div class="single_form mt-8">
-                                                <textarea name="message" id="message" placeholder="Message" rows="5" class="w-full rounded-md py-4 px-6 border border-solid border-body-color resize-none"></textarea>
-                                            </div> <!-- single form -->
-                                        </div>
-                                    </div>
-                                    <p class="form-message mx-3"></p>
-                                    <div class="w-full">
-                                        <div class="mx-3">
-                                            <div class="single_form mt-8">
-                                                <button type="submit" class="main-btn contact-btn">Submit</button>
-                                            </div> <!-- single form -->
-                                        </div>
-                                    </div>
-                                </div> <!-- row -->
-                            </form>
-                        </div> <!-- contact form -->
-                    </div> <!-- contact wrapper -->
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>DSI-MFFP</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/fonts/lineicons/font-css/LineIcons.css">
+
+    <!--====== Tailwind CSS ======-->
+    <link rel="stylesheet" href="assets/css/tailwindcss.css">
+
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+   
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+
+    <section class="header_area">
+        <div class="navbar-area bg-white">
+            <div class="container relative">
+                <div class="row items-center">
+                    <div class="w-full">
+                        <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
+                            <a class="navbar-brand mr-5 text-black text-l" href="index-2.html">
+                                <!-- <img src="assets/images/logo.svg" alt="Logo"> -->
+                                DSI
+                            </a>
+                            <button class="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none" id="navbarOne">
+                                <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll active" href="#home">Accueil</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#blog">Actualités</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#about">Organisation</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#services">Services</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#work">Rapports</a>
+                                    </li>
+                                    <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#team">Equipe</a>
+                                    </li>
+                                    <!-- <li class="nav-item ml-5 lg:ml-11">
+                                        <a class="page-scroll" href="#contact">Contact</a>
+                                    </li> -->
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
     </section>
 
-    <!--====== CONTACT PART ENDS ======-->
+    <!--====== HEADER PART ENDS ======-->
+
+</div> <!-- container -->
+<div class="container-fluid">
+    <div class="work_wrapper relative">
+        <div class="row work_active">
+            <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
+                <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                    <div class="blog_image">
+                        <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                    </div>
+                    <div class="blog_content p-4 md:p-5">
+                        <ul class="blog_meta flex justify-between">
+                            <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
+                            <li class="text-body-color text-sm md:text-base">15 June 2024</li>
+                        </ul>
+                        <h3 class="blog_title"><a href="#">How to track your business revenue</a></h3>
+                        <a href="#" class="more_btn">Read More</a>
+                    </div>
+                </div> <!-- row -->
+            </div>
+            <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
+                <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                    <div class="blog_image">
+                        <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                    </div>
+                    <div class="blog_content p-4 md:p-5">
+                        <ul class="blog_meta flex justify-between">
+                            <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
+                            <li class="text-body-color text-sm md:text-base">15 June 2024</li>
+                        </ul>
+                        <h3 class="blog_title"><a href="#">How to track your business revenue</a></h3>
+                        <a href="#" class="more_btn">Read More</a>
+                    </div>
+                </div> <!-- row -->
+            </div>
+            <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
+                <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                    <div class="blog_image">
+                        <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                    </div>
+                    <div class="blog_content p-4 md:p-5">
+                        <ul class="blog_meta flex justify-between">
+                            <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
+                            <li class="text-body-color text-sm md:text-base">15 June 2024</li>
+                        </ul>
+                        <h3 class="blog_title"><a href="#">How to track your business revenue</a></h3>
+                        <a href="#" class="more_btn">Read More</a>
+                    </div>
+                </div> <!-- row -->
+            </div>
+            <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
+                <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
+                    <div class="blog_image">
+                        <img src="assets/images/blog-1.jpg" alt="blog" class="w-full">
+                    </div>
+                    <div class="blog_content p-4 md:p-5">
+                        <ul class="blog_meta flex justify-between">
+                            <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
+                            <li class="text-body-color text-sm md:text-base">15 June 2024</li>
+                        </ul>
+                        <h3 class="blog_title"><a href="#">How to track your business revenue</a></h3>
+                        <a href="#" class="more_btn">Read More</a>
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="scroll-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->    
+
+    <!--====== PART START ======-->
+
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+
+
+
+
+    <!--====== Tiny Slider js ======-->
+    <script src="assets/js/tiny-slider.js"></script>
+
+    <!--====== Wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+<!-- Mirrored from preview.tailwindtemplates.co/plain/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 May 2023 21:10:38 GMT -->
+</html>
+
