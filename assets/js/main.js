@@ -102,8 +102,8 @@
         nav: true,
         controls: false,
         controlsText: [
-            '<i class="lni lni-chevron-left prev"></i>',
-            '<i class="lni lni-chevron-right next"></i>'
+            '<div class=" text-black text-sm btn-carousel"><i class="lni lni-chevron-left prev"></i></div>',
+            '<div class=" text-black text-sm btn-carousel"><i class="lni lni-chevron-right next"></i></div>'
         ],
         items: 5,
 
@@ -115,13 +115,13 @@
                 items: 2,
             },
             850: {
-                items: 3,
-            },
-            1200: {
                 items: 4,
             },
-            1400: {
+            1200: {
                 items: 5,
+            },
+            1400: {
+                items: 6,
             },
         }
     });
@@ -136,8 +136,8 @@
         nav: true,
         controls: false,
         controlsText: [
-            '<i class="lni lni-chevron-left prev"></i>',
-            '<i class="lni lni-chevron-right next"></i>'
+            '<div class=" text-black text-sm btn-carousel"><i class="lni lni-chevron-left prev"></i></div>',
+            '<div class=" text-black text-sm btn-carousel"><i class="lni lni-chevron-right next"></i></div>'
         ],
         items: 5,
 
@@ -146,10 +146,44 @@
                 items: 1,
             },
             768: {
-                items: 2,
+                items: 3,
             },
             1050: {
+                items: 4,
+            },
+        }
+    });
+    //======== tiny slider for blog
+    tns({
+        container: '.blog_active',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayText: [ ' ', ' ' ],
+        mouseDrag: true,
+        gutter: 0,
+        nav: true,
+        controls: false,
+        controlsText: [
+            '<div class=" text-black text-sm btn-carousel"><i class="lni lni-chevron-left prev"></i></div>',
+            '<div class=" text-black text-sm btn-carousel"><i class="lni lni-chevron-right next"></i></div>'
+        ],
+        items: 5,
+
+        responsive: {
+            0: {
+                items: 2,
+            },
+            570: {
                 items: 3,
+            },
+            850: {
+                items: 4,
+            },
+            1200: {
+                items: 5,
+            },
+            1400: {
+                items: 6,
             },
         }
     });

@@ -604,12 +604,31 @@ video {
     width: 70px !important;
   }
 }
+
 #home {
   height:  80vh;
   background: url('../images/bg.jpg');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.btn-voir{
+  border-radius: 5px;
+  padding: 8px 12px;
+  transition: 0.5s;
+}
+
+.btn-voir:hover{
+  background: #02A652;
+  color: white;
+}
+
+.btn-carousel{
+  border-radius: 8px;
+  background: #02A652;
+  color: white !important;
+  padding: 8px 12px;
 }
 
 .no-margin{
@@ -756,8 +775,16 @@ video {
   justify-content: center;
 }
 
+.justify-start{
+  justify-content: start;
+}
+
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-evently{
+  justify-content: space-evenly;
 }
 
 .font-semibold{
@@ -1085,7 +1112,7 @@ video {
 
 .text-theme-color{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .text-body-color{
@@ -1095,7 +1122,7 @@ video {
 
 .hover\:text-theme-color:hover{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .w-1\/2{
@@ -1314,17 +1341,17 @@ a, button {
 .border-btn {
   background-color: transparent;
   --tw-border-opacity: 1;
-  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+  border-color: #02A652;
   border-style: solid;
   border-width: 2px;
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .border-btn:hover {
   position: relative;
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .btn-hover::after {
@@ -1393,7 +1420,7 @@ a, button {
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 @media (min-width: 720px){
@@ -1600,9 +1627,21 @@ a, button {
   border-color: rgba(232, 232, 232, var(--tw-border-opacity));
 }
 
+.text-lg{
+  font-size: larger;
+}
+
+.text-md{
+  font-size: medium;
+}
+
+.size-content{
+  min-height: 170px !important;
+}
+
 .single_services:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+  border-color: #02A652;
 }
 
 .single_services{
@@ -1690,7 +1729,7 @@ a, button {
 .single_services:hover .services_shape {
   fill: currentColor;
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 /* ========== about ========== */
@@ -1814,7 +1853,7 @@ a, button {
 
 .work_title a:hover{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 /* ======== team ======= */
@@ -2610,7 +2649,7 @@ a, button {
 
 .single_team:hover .group-hover\:border-theme-color{
   --tw-border-opacity: 1;
-  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+  border-color: #02A652;
 }
 
 .single_team:hover .group-hover\:border-border-color{
@@ -3135,7 +3174,7 @@ a, button {
 
 .single_team:hover .group-hover\:text-theme-color{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .single_team:hover .group-hover\:text-border-color{
@@ -3981,7 +4020,7 @@ a, button {
 
   .single_team:hover .sm\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_team:hover .sm\:group-hover\:border-border-color{
@@ -4494,7 +4533,7 @@ a, button {
 
   .single_team:hover .sm\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_team:hover .sm\:group-hover\:text-border-color{
@@ -5334,7 +5373,7 @@ a, button {
 
   .single_team:hover .md\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_team:hover .md\:group-hover\:border-border-color{
@@ -5847,7 +5886,7 @@ a, button {
 
   .single_team:hover .md\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_team:hover .md\:group-hover\:text-border-color{
@@ -6687,7 +6726,7 @@ a, button {
 
   .single_team:hover .lg\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_team:hover .lg\:group-hover\:border-border-color{
@@ -7200,7 +7239,7 @@ a, button {
 
   .single_team:hover .lg\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_team:hover .lg\:group-hover\:text-border-color{
@@ -8040,7 +8079,7 @@ a, button {
 
   .single_team:hover .xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_team:hover .xl\:group-hover\:border-border-color{
@@ -8553,7 +8592,7 @@ a, button {
 
   .single_team:hover .xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_team:hover .xl\:group-hover\:text-border-color{
@@ -9393,7 +9432,7 @@ a, button {
 
   .single_team:hover .\32xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_team:hover .\32xl\:group-hover\:border-border-color{
@@ -9906,7 +9945,7 @@ a, button {
 
   .single_team:hover .\32xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_team:hover .\32xl\:group-hover\:text-border-color{
@@ -10033,7 +10072,7 @@ a, button {
 
 .team_image .social li a:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+  border-color: #02A652;
 }
 
 .team_image .social li a{
@@ -10840,7 +10879,7 @@ a, button {
 
 .single_pricing:hover .group-hover\:border-theme-color{
   --tw-border-opacity: 1;
-  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+  border-color: #02A652;
 }
 
 .single_pricing:hover .group-hover\:border-border-color{
@@ -10865,7 +10904,7 @@ a, button {
 
 .single_pricing:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+  border-color: #02A652;
 }
 
 .single_pricing:hover .group-hover\:border-opacity-0{
@@ -11373,7 +11412,7 @@ a, button {
 
 .single_pricing:hover .group-hover\:text-theme-color{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .single_pricing:hover .group-hover\:text-border-color{
@@ -12219,7 +12258,7 @@ a, button {
 
   .single_pricing:hover .sm\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_pricing:hover .sm\:group-hover\:border-border-color{
@@ -12732,7 +12771,7 @@ a, button {
 
   .single_pricing:hover .sm\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_pricing:hover .sm\:group-hover\:text-border-color{
@@ -13572,7 +13611,7 @@ a, button {
 
   .single_pricing:hover .md\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_pricing:hover .md\:group-hover\:border-border-color{
@@ -14089,7 +14128,7 @@ a, button {
 
   .single_pricing:hover .md\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_pricing:hover .md\:group-hover\:text-border-color{
@@ -14929,7 +14968,7 @@ a, button {
 
   .single_pricing:hover .lg\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_pricing:hover .lg\:group-hover\:border-border-color{
@@ -15442,7 +15481,7 @@ a, button {
 
   .single_pricing:hover .lg\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_pricing:hover .lg\:group-hover\:text-border-color{
@@ -16282,7 +16321,7 @@ a, button {
 
   .single_pricing:hover .xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_pricing:hover .xl\:group-hover\:border-border-color{
@@ -16795,7 +16834,7 @@ a, button {
 
   .single_pricing:hover .xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_pricing:hover .xl\:group-hover\:text-border-color{
@@ -17635,7 +17674,7 @@ a, button {
 
   .single_pricing:hover .\32xl\:group-hover\:border-theme-color{
     --tw-border-opacity: 1;
-    border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+    border-color: #02A652;
   }
 
   .single_pricing:hover .\32xl\:group-hover\:border-border-color{
@@ -18148,7 +18187,7 @@ a, button {
 
   .single_pricing:hover .\32xl\:group-hover\:text-theme-color{
     --tw-text-opacity: 1;
-    color: rgba(1, 105, 52, var(--tw-text-opacity));
+    color: #02A652
   }
 
   .single_pricing:hover .\32xl\:group-hover\:text-border-color{
@@ -18246,7 +18285,7 @@ a, button {
 
 .single_pricing.active {
   --tw-border-opacity: 1;
-  border-color: rgba(1, 105, 52, var(--tw-border-opacity));
+  border-color: #02A652;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -18284,7 +18323,7 @@ a, button {
 .single_pricing.active .services_shape, .single_pricing:hover .services_shape{
   fill: currentColor;
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .pricing_btn {
@@ -18336,7 +18375,7 @@ a, button {
 
 .blog_title a:hover{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 @media (min-width: 540px){
@@ -18356,7 +18395,7 @@ a, button {
 
 .more_btn:hover{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 /* ========== contact ========= */
@@ -18467,7 +18506,7 @@ a, button {
 
 .footer_social li a:hover{
   --tw-text-opacity: 1;
-  color: rgba(1, 105, 52, var(--tw-text-opacity));
+  color: #02A652
 }
 
 .footer_social li a{
