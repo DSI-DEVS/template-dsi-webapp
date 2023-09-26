@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--====== Favicon Icon ======-->
+     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+     <!--====== Animate CSS ======-->
+     <link rel="stylesheet" href="assets/css/animate.css">
+ 
+     <!--====== Line Icons CSS ======-->
+     <link rel="stylesheet" href="assets/fonts/lineicons/font-css/LineIcons.css">
+     <link rel="stylesheet" href="assets/css/style.css">    
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/flowbite.js"></script>
+
+    <style>
+        .bg-img {
+            background-image: url('./assets/images/bg-img.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .bg-green {
+            background: #09581f81
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="block md:flex items-center">
+                <img src="assets/logo/dsi-logo.png" class="h-7 md:h-8 mr-5" alt="Flowbite Logo" />
+                <div class="hidden md:block items-center">
+                    <span class="self-center text-center text-xs md:text-xl w-full font-bold text-slate-800 whitespace-nowrap ">Ministère de l'economie et des finances </span><br>
+                    <p class="self-center text-slate-700 text-xs md:text-sm text-center  font-semibold whitespace-nowrap  uppercase">Direction des Systèmes d'Information</p>
+                </div>
+            </a>
+            <button class="block navbar-toggler  text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-200" type="button" data-dropdown-toggle="dropdown" aria-controls="navbar-default" aria-expanded="false" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            <div class="hidden w-full py-12 flex justify-center bg-white" id="dropdown">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Attributions</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative">
+        <div class="z-10 fixed w-full bg-img h-96"></div>
+
+        <div class="z-40 relative">
+            <!-- <div class="h-6 p-10"></div> -->
+            <div class="bg-green h-96 flex items-center">
+            
+            </div>
+
+            <div class="bg-white relative pt-4">
+                <div class="flex justify-center">
+                    <h1 class="w-11/12 md:w-6/12 mx-auto absolute -top-7 bg-white text-slate-600 text-center p-4 rounded-t-lg text-sm md:text-lg font-bold uppercase">Les publications</h1>
+                </div>
+                <div class="w-12 h-12 flex items-center justify-center p-2 mx-auto my-8 bg-gray-200 border-0 rounded-full md:my-12">
+                    <img src="./assets/images/armoirie.png">
+                </div>
+                <!-- ACTUALITE SECTION -->
+                <div class="w-11/12 mx-auto text-start">
+                    <hr class="mx-4 mt-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <div class="w-8 h-8 rounded-md hover:shadow-lg border mr-4 flex justify-center items-center bg-gray-50">MC</div>
+                                        <!-- <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/> -->
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <div class="w-8 h-8 rounded-md hover:shadow-lg border mr-4 flex justify-center items-center bg-gray-50">MC</div>
+                                        <!-- <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/> -->
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <div class="w-8 h-8 rounded-md hover:shadow-lg border mr-4 flex justify-center items-center bg-gray-50">MC</div>
+                                        <!-- <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/> -->
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+                            
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/>
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--
+                    FOOTER
+                -->
+                <footer id="" class="relative bg-gray-800 z-10 h-1/2 p-9">
+                    
+                    <div class="text-white-200">
+                        <div class="pt-18 pb-120 w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+                                <div class="col-span-4 md:col-span-1">
+                                    <div class="footer_about mt-13">
+                                        <div class="footer_logo text-black">
+                                            <!-- <a href="#"><img src="assets/images/logo-footer.svg" alt=""></a> -->
+                                            <img src="./assets/logo/dsi-logo.png" class="h-7 md:h-8 mr-5 rounded" alt="Flowbite Logo" />
+                                        </div>
+                                        <div class="footer_content mt-8">
+                                            <p class="text-white text-sm md:text-lg">DIRECTION DES SYSTÈMES D'INFORMATION</p>
+                                        </div>
+                                    </div> <!-- footer about -->
+                                </div>
+
+                                <div class="col-span-4 md:col-span-1  mt-13">
+                                    <h2 class="footer_title text-xl font-semibold text-white">Quick Links</h2>
+                                    <ul class="link pt-4">
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Company</a></li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Privacy Policy</a>
+                                        </li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">About</a></li>
+                                    </ul>
+                                </div> <!-- footer link -->
+                                <div class="col-span-4 md:col-span-1 mt-13">
+                                    <h2 class="footer_title text-xl font-semibold text-white">Resources</h2>
+                                    <ul class="link pt-4">
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Support</a></li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Service Support</a></li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Terms</a></li>
+                                    </ul>
+                                </div> <!-- footer link -->
+
+                                <div class="col-span-4 md:col-span-1">
+                                    <div class="footer_subscribe mt-13 mx-3">
+                                        <h2 class="footer_title text-xl font-semibold text-white text-right">Service Support</h2>
+                                        <h2 class="subscribe_form text-right mt-4 relative text-slate-400 text-slate-400">1111</h2>
+                                        <div class="subscribe_form text-right mt- relative text-slate-400">
+                                            contact@finances.gouv.cg
+                                        </div>
+                                    </div> <!-- footer subscribe -->
+                                </div>
+
+                            </div> <!-- row -->
+                        </div> <!-- footer widget -->
+                        <div
+                            class="footer_copyright pt-3 pb-6 border-t-2 border-solid border-white border-opacity-10 sm:flex justify-between">
+                            <div class="footer_social pt-4 mx-3 text-center">
+                                <ul class="social flex justify-center sm:justify-start">
+                                    <li class="mr-3"><a href="https://facebook.com/uideckHQ"><i
+                                                class="lni lni-facebook-filled"></i></a></li>
+                                    <li class="mr-3"><a href="https://twitter.com/uideckHQ"><i
+                                                class="lni lni-twitter-filled"></i></a></li>
+                                    <li class="mr-3"><a href="https://instagram.com/uideckHQ"><i
+                                                class="lni lni-instagram-original"></i></a></li>
+                                    <li class="mr-3"><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div> <!-- footer social -->
+                            <div class="footer_copyright_content pt-4 text-center">
+                                <p class="text-white">Designed and Developed by <a href="https://uideck.com/" rel="nofollow"
+                                        class="text-white hover:text-theme-color">DEVS</a></p>
+                            </div> <!-- footer copyright content -->
+                        </div> <!-- footer copyright -->
+                    </div> <!-- container -->
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
