@@ -35,7 +35,7 @@
 <body>
 
     <nav class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="max-w-screen- flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="block md:flex items-center">
                 <img src="assets/logo/dsi-logo.png" class="h-7 md:h-8 mr-5" alt="Flowbite Logo" />
                 <div class="hidden md:block items-center">
@@ -44,40 +44,34 @@
                 </div>
             </a>
             <button
-                class="block navbar-toggler  text-gray-500 hover:bg-gray-100 p-2 rounded"
+                class="block navbar-toggler text-gray-500 hover:bg-gray-100 p-2 rounded"
                 type="button" data-dropdown-toggle="dropdown" aria-controls="navbar-default" aria-expanded="false"
                 data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
+                aria-label="Toggle navigation"
+            >
+                <span class="toggler-icon w-7"></span>
+                <span class="toggler-icon w-7"></span>
+                <span class="toggler-icon w-7"></span>
             </button>
-            <div class="absolute left-0 right-0 -top-7 z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-600 shadow-lg"
-                aria-labelledby="dropdownMenuButtonY" data-te-dropdown-menu-ref id="dropdown">
-
-                <div class="px-6 py-5 lg:px-8">
-                    <div class="flex justify-end ">
-                        <div class="w-full">
-                            <a href="#!" aria-current="true"
-                                class="block w-full px-6 py-2 hover:shadow text-end transition duration-150 ease-in-out hover:bg-emerald-100 hover:text-neutral-700">Actualiter
-                            </a>
-                            <a href="#!" aria-current="true"
-                                class="block w-full px-6 py-2 hover:shadow text-end transition duration-150 ease-in-out hover:bg-emerald-100 hover:text-neutral-700">A propos
-                                </a>
-                            <a href="#!" aria-current="true"
-                                class="block w-full px-6 py-2 hover:shadow text-end transition duration-150 ease-in-out hover:bg-emerald-100 hover:text-neutral-700">Publication
-                            </a>
-                            <a href="#!" aria-current="true"
-                                class="block w-full px-6 py-2 hover:shadow text-end transition duration-150 ease-in-out hover:bg-emerald-100 hover:text-neutral-700">Rapport
-                            </a>
-                            <a href="#!" aria-current="true"
-                                class="block w-full px-6 py-2 hover:shadow text-end transition duration-150 ease-in-out hover:bg-emerald-100 hover:text-neutral-700">Administration
-                            </a>
-                        </div>
-                       
-                        
-                    </div>
-                </div>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-white divide-y shadow border divide-gray-100 rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Actualiter</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Publication</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rapport</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Administration</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
