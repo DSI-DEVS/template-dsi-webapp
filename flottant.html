@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="./assets/logo/dsi-logo.png" type="image/png">
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/fonts/lineicons/font-css/LineIcons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/flowbite.js"></script>
+
+    <style>
+        .bg-img {
+            background-image: url('./assets/images/bg-img.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bg-green {
+            background: #09581f81
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
+        <div class="max-w-screen- flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="block md:flex items-center">
+                <img src="assets/logo/dsi-logo.png" class="h-7 md:h-8 mr-5" alt="Flowbite Logo" />
+                <div class="hidden md:block items-center">
+                    <span
+                        class="self-center text-center text-xs md:text-xl w-full font-bold text-slate-800 whitespace-nowrap ">Ministère
+                        de l'economie et des finances </span><br>
+                </div>
+            </a>
+            <button class="block navbar-toggler text-gray-500 hover:bg-gray-100 p-2 rounded" type="button"
+                data-dropdown-toggle="dropdown" aria-controls="navbar-default" aria-expanded="false"
+                data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon w-7"></span>
+                <span class="toggler-icon w-7"></span>
+                <span class="toggler-icon w-7"></span>
+            </button>
+            <!-- Dropdown menu -->
+            <!-- <div id="dropdown" class="z-10 hidden bg-white divide-y shadow border divide-gray-100 rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Actualiter</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Publication</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rapport</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Administration</a>
+                    </li>
+                </ul>
+            </div> -->
+            <div id="avatarButton" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start"
+                class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600 cursor-pointer">
+                <span class="font-medium text-gray-600 dark:text-gray-300">GI</span>
+            </div>
+            <!-- <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="w-10 h-10 rounded-full cursor-pointer" src="/docs/images/people/profile-picture-5.jpg" alt="User dropdown"> -->
+
+            <!-- Dropdown menu -->
+            <div id="userDropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <div class="px-4 py-3 text-sm text-gray-900 dark:text-white grid grid-rows-2 ">
+                    <div>Gaëtan ILOY</div>
+                    <span
+                        class="bg-green-100 text-green-800 text-xs font-medium text-center mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">DSI</span>
+                </div>
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Actualités</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Publications</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rapports</a>
+                    </li>
+                </ul>
+                <div class="py-1">
+                    <a href="#"
+                        class="block px-4 py-2 text-sm text-red-700 hover:bg-red-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Déconnexion</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="relative">
+        <div class="z-10 fixed w-full bg-img h-9"></div>
+
+        <div class="z-40 relative">
+            <!-- <div class="h-6 p-10"></div> -->
+            <div class="bg-green h-98 flex items-center">
+                <div class="text-white px-8 w-full">
+                    <h3 class="text-sm md:text-4xl texet-white w-full text-center md:text-rigth">DIRECTION DES SYSTÈMES
+                        D'INFORMATION</h3>
+                    <p class="mt-8 w-11/12 md:w-7/12 text-center mx-auto">animée par son Directeur, apporte à l’ensemble
+                        des services du Ministère de l'économie et des Finances sur toute l'étendue du térritoire
+                        national, ses compétences techniques en matière de systèmes d’information.</p>
+                    <div class="flex justify-center mt-8">
+                        <a href="#" class="bg-amber-400 py-2 px-8 rounded">A propos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white relative pt-4">
+                <div class="flex justify-center">
+                    <h1
+                        class="w-11/12 md:w-6/12 mx-auto absolute -top-7 bg-white text-slate-600 text-center p-4 rounded-t-lg text-sm md:text-lg font-bold uppercase">
+                        Ministere de l'économie et des finances</h1>
+                </div>
+                <div
+                    class="w-12 h-12 flex items-center justify-center p-2 mx-auto my-8 bg-gray-200 border-0 rounded-full md:my-12">
+                    <img src="./assets/images/armoirie.png">
+                </div>
+                <!-- ACTUALITE SECTION -->
+                <div class="w-11/12 mx-auto text-start ">
+                    <h2 class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-globe mx-4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                        </svg>
+                        Actualités
+                    </h2>
+                    <div class="flex justify-between items-center">
+                        <p class="mx-4">Dernières publications</p>
+                        <a href="#"
+                            class="mx-4 flex items-center gap-4 text-emerald-500 duration-300 hover:text-emerald-600">
+                            voir plus
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 16 16">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M11 1h4m0 0v4m0-4-5 5.243M5 15H1m0 0v-4m0 4 5.243-5" />
+                            </svg>
+                        </a>
+                    </div>
+                    <hr class="mx-4 mt-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help
+                                            in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process
+                                        on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <div
+                                            class="w-8 h-8 rounded-md hover:shadow-lg border mr-4 flex justify-center items-center bg-gray-50">
+                                            MC</div>
+                                        <!-- <img class="w-8 h-8 rounded-full shadow-lg border mr-4" src="./assets/images/profile-picture-3.jpg" alt="Bonnie image"/> -->
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help
+                                            in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process
+                                        on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4"
+                                            src="./assets/images/profile-picture-3.jpg" alt="Bonnie image" />
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help
+                                            in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process
+                                        on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4"
+                                            src="./assets/images/profile-picture-3.jpg" alt="Bonnie image" />
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="max-w-sm bg-white border border-gray-200 shadow">
+                            <a href="#" class="w-full bg-red-400">
+                                <img src="./assets/images/image-1.jpg" alt="" />
+
+                                <div class="p-6">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Need a help
+                                            in Claim?</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-600">Go to this step by step guideline process
+                                        on how to certify for your weekly benefits:</p>
+                                    <!-- <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                                        See our guideline
+                                        <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                                        </svg>
+                                    </a> -->
+                                    <div class="flex justify-start items-center text-left">
+                                        <img class="w-8 h-8 rounded-full shadow-lg border mr-4"
+                                            src="./assets/images/profile-picture-3.jpg" alt="Bonnie image" />
+                                        Musharof Chowdury
+                                    </div>
+                                    <ul class="">
+                                        <li class="text-sm text-slate-400 mt-4">15 June 2024</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- notif -->
+
+                <!-- <div id="notificationButton"
+                    class="fixed bottom-10 right-4 p-4 bg-blue-500 text-white rounded-full cursor-pointer">
+                    <div id="notificationIcon">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 14 20">
+                            <path
+                                d="M12.133 10.632v-1.8A5.406 5.406 0 0 0 7.979 3.57.946.946 0 0 0 8 3.464V1.1a1 1 0 0 0-2 0v2.364a.946.946 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C1.867 13.018 0 13.614 0 14.807 0 15.4 0 16 .538 16h12.924C14 16 14 15.4 14 14.807c0-1.193-1.867-1.789-1.867-4.175ZM3.823 17a3.453 3.453 0 0 0 6.354 0H3.823Z" />
+                        </svg>
+                    </div>
+                    <span id="notificationCount" class="badge">0</span>
+                </div> -->
+
+                <!-- Notification Start -->
+                <button id="notificationButton" type="button" data-dropdown-toggle="notificationDropdown"
+                    data-dropdown-placement="bottom-start"
+                    class="fixed bottom-10 right-4 inline-flex items-center h-12 w-12 p-3 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:outline-none focus:ring-blue-300">
+                    <div id="notificationIcon" class="mx-auto">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 14 20">
+                            <path
+                                d="M12.133 10.632v-1.8A5.406 5.406 0 0 0 7.979 3.57.946.946 0 0 0 8 3.464V1.1a1 1 0 0 0-2 0v2.364a.946.946 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C1.867 13.018 0 13.614 0 14.807 0 15.4 0 16 .538 16h12.924C14 16 14 15.4 14 14.807c0-1.193-1.867-1.789-1.867-4.175ZM3.823 17a3.453 3.453 0 0 0 6.354 0H3.823Z" />
+                        </svg>
+                    </div>
+                    <span class="sr-only">Notifications</span>
+                    <div id="notificationCount"
+                        class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                        4</div>
+                </button>
+
+
+                <div id="notificationDropdown"
+                    class="hidden z-40 fixed bottom-28 right-4 h-96 gap-y-4 p-4 bg-gray-100 bg-opacity-100 flex flex-col overflow-y-scroll max-w-xs rounded-md">
+
+                    <div id="toast-interactive2"
+                        class="w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:bg-gray-800 dark:text-gray-400"
+                        role="alert">
+                        <div class="flex">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg dark:text-blue-300 dark:bg-blue-900">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
+                                </svg>
+                                <span class="sr-only">Refresh icon</span>
+                            </div>
+                            <div class="ms-3 text-sm font-normal">
+                                <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Update
+                                    available</span>
+                                <div class="mb-2 text-sm font-normal">A new software version is available for download.
+                                </div>
+                            </div>
+                            <button type="button"
+                                class="ms-auto -mx-1.5 -my-1.5 bg-white items-center justify-center flex-shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                                data-dismiss-target="#toast-interactive2" aria-label="Close">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="toast-message-cta"
+                        class="w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:bg-gray-800 dark:text-gray-400"
+                        role="alert">
+                        <div class="flex">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-blue-500 bg-blue-100 rounded-lg dark:text-blue-300 dark:bg-blue-900">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 18 19">
+                                    <path
+                                        d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z" />
+                                </svg>
+                                <span class="sr-only">Refresh icon</span>
+                            </div>
+                            <div class="ms-3 text-sm font-normal">
+                                <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Gaëtan
+                                    ILOY</span>
+                                <div class="mb-2 text-sm font-normal">Hi Neil, thanks for sharing your thoughts
+                                    regarding Flowbite.</div>
+                            </div>
+                            <button type="button"
+                                class="ms-auto -mx-1.5 -my-1.5 bg-white justify-center items-center flex-shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                                data-dismiss-target="#toast-message-cta" aria-label="Close">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="toast-interactive"
+                        class="w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:bg-gray-800 dark:text-gray-400"
+                        role="alert">
+                        <div class="flex">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:text-blue-300 dark:bg-blue-900">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                <span class="sr-only">Refresh icon</span>
+                            </div>
+                            <div class="ms-3 text-sm font-normal">
+                                <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Update
+                                    available</span>
+                                <div class="mb-2 text-sm font-normal">A new software version is available for download.
+                                </div>
+                            </div>
+                            <button type="button"
+                                class="ms-auto -mx-1.5 -my-1.5 bg-white items-center justify-center flex-shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                                data-dismiss-target="#toast-interactive" aria-label="Close">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="toast-interactive2"
+                        class="w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:bg-gray-800 dark:text-gray-400"
+                        role="alert">
+                        <div class="flex">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-blue-500 bg-blue-100 rounded-lg dark:text-blue-300 dark:bg-blue-900">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 18 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M16 1v5h-5M2 19v-5h5m10-4a8 8 0 0 1-14.947 3.97M1 10a8 8 0 0 1 14.947-3.97" />
+                                </svg>
+                                <span class="sr-only">Refresh icon</span>
+                            </div>
+                            <div class="ms-3 text-sm font-normal">
+                                <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Update
+                                    available</span>
+                                <div class="mb-2 text-sm font-normal">A new software version is available for download.
+                                </div>
+                            </div>
+                            <button type="button"
+                                class="ms-auto -mx-1.5 -my-1.5 bg-white items-center justify-center flex-shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                                data-dismiss-target="#toast-interactive2" aria-label="Close">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                <!-- Notification End -->
+
+
+                    <!-- Bouton de fermeture avec une icône FontAwesome -->
+                    <!-- <button id="closeButton" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                        <svg class="w-4 h-4 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
